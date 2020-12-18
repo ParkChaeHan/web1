@@ -56,16 +56,34 @@
     var coworkers = ['kiwi','orange']
   </script>
   </p>
-  <p><script type="text/javascript">
+  <p><script>
     coworkers.push('duru')
   </script></p>
   <p><script type="text/javascript">
     document.write(coworkers)
   </script></p>
 
-  <h2> for문 활용</h2>
+  <h2> 반복문의 활용   </h2>
+  <p> <script>
+    var i = 0;
+    while (i<3) {
+      document.write('<li>absd</li>');
+      i = i +1;
+    }
+  </script>
+  </p>
+  <h2> 배열과 반복문 </h2>
+  <p><script>
+    i= 0 ;
+    var coworker = ['a','b','c','d'];
+    while (i< coworker.length){
+      document.write('<li>'+coworker[i]+'</li>');
+      i = i +1 ;
+    }
+  </script></p>
+  <h2> 배열과 반복문의 활용</h2>
   <p><script type="text/javascript">
-    
+
   </script></p>
 </body>
 </html>
