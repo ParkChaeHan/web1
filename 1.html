@@ -5,16 +5,67 @@
   <meta charset="utf-8">
 </head>
 <body>
-<h1><u><a href="index.html" target="_blank">WEB</a></u></h1>
-<ol>
-  <li><u><a href="1.html">HTML</a></u></li>
-  <li><a href="2.html">CSS</a></li>
-  <li><a href="3.html">Javascript</a></li>
-  <li><strong> 지민바보 </strong></li>
-  <input type="button" value="지민바보버튼" onclick="alert('왜눌러')">
-</ol>
-<h2>WEB</h2>
-<p>
-The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
+  <h1><u><a href="index.html" target="_blank">WEB</a></u></h1>
+  <h2> order list 만들기 </h2>
+  <ol>
+    <li><u><a href="1.html">HTML</a></u></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">Javascript</a></li>
+    <li><strong> 바보 </strong></li>
+  </ol>
+  <h2>버튼만들기 <h2>
+  <input type="button" value='black' onclick="
+    document.querySelector('body').style.backgroundColor='black'
+    document.querySelector('body').style.color='white'
+  ">
+  <input type="button" value="white" onclick="
+    document.querySelector('body').style.backgroundColor='white'
+    document.querySelector('body').style.color='black'
+  ">
+  <input type="button" value="바보버튼" onclick="alert('왜눌러')">
+
+  <h2> 배경색과 style 활용</h2>
+  <p style='color:powderblue;background-color:coral'>
+  <span style='font-weight:bold'>The World Wide Web</span> (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
+
+  <h2>if문의 활용</h2>
+  <p> <script>
+      document.write('1<br>');
+      if (true) {
+        document.write('2<br>')
+      } else{
+        document.write('3<br>')
+      }
+  </script>
+  <h2> 토글 만들기 this와 target </h2>
+<input id='night_day' type="button" value="night" onclick="
+  var target = document.querySelector('body')
+  if ( document.querySelector('#night_day').value === 'night' ) {
+    document.querySelector('body').style.backgroundColor='black'
+    target.style.color='white'
+    this.value= 'day'
+  } else {
+    document.querySelector('body').style.backgroundColor='white'
+    document.querySelector('body').style.color='black'
+    document.querySelector('#night_day').value= 'night'
+  }
+  ">
+  <h2> 변수 & 배열만들기 </h2>
+  </p>
+  <p><script type="text/javascript">
+    var coworkers = ['kiwi','orange']
+  </script>
+  </p>
+  <p><script type="text/javascript">
+    coworkers.push('duru')
+  </script></p>
+  <p><script type="text/javascript">
+    document.write(coworkers)
+  </script></p>
+
+  <h2> for문 활용</h2>
+  <p><script type="text/javascript">
+    
+  </script></p>
 </body>
 </html>
